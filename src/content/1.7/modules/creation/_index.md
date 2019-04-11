@@ -155,7 +155,7 @@ $this->author = 'Firstname Lastname';
 This section assigns a handful of attributes to the class instance
 (`this`):
 
--   'name' attribute. This attributes serves as an internal identifier.
+-   'name' attribute. This attribute serves as an internal identifier.
     The value MUST be the name of the module's folder. Do not use
     special characters or spaces, and keep it lower-case.
 -   'tab' attribute. The title for the section that shall contain this
@@ -293,7 +293,7 @@ Building the install() and uninstall() methods
 
 Some modules have more needs than just using PrestaShop's features in
 special ways. Your module might need to perform actions on installation,
-such as checking PrestaShop's settings or to registering its own
+such as checking PrestaShop's settings or to register its own
 settings in the database. Likewise, if you changed things in the
 database on installation, it is highly recommended to change them back
 (or remove them) when uninstalling the module.
@@ -397,7 +397,7 @@ and `uninstall()`) all make use of a new object, `Configuration`.
 
 This is a PrestaShop-specific object, built to help developers manage
 their module settings. It stores these settings in PrestaShop's database
-without require to use SQL queries. Specifically, this object handles
+without requiring the developer to use SQL queries. Specifically, this object handles
 data from the `ps_configuration` database table.
 
 ### The main methods
@@ -418,7 +418,7 @@ list below:
 There are many more, such as `getInt()` or `hasContext()`, but these
 four are the ones you will use the most.
 
-Note that when using `updateValue()`, the content of \$value can be
+Note that when using `updateValue()`, the content of `$value` can be
 anything, be it a string, a number, a serialized PHP array or a JSON
 object. As long as you properly code the data handling function,
 anything goes. For instance, here is how to handle a PHP array using the
