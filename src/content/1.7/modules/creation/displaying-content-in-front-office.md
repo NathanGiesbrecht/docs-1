@@ -341,7 +341,7 @@ browser. Those dynamic elements are indicated with curly brackets:
 `{ ... }`. Programmers can create new variables and use them in TPL
 files; PrestaShop adds its own set of variables.
 
-For instance, we can create the \$my\_module\_message variable in PHP
+For instance, we can create the `$my\_module\_message` variable in PHP
 right in the `hookDisplayLeftColumn()` method, and have it displayed by
 our template file:
 
